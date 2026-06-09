@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+
+</head>
+<body>
+
+<script>
+const choice = prompt(
+`Choose a site:
+
+1 = Turbowarp
+2 = Penguinmod
+3 = Scratch
+4 = BGRWFV (this site)`
+);
+
+switch (choice) {
+    case "1":
+        window.location.href = "https://turbowarp.org";
+        break;
+    case "2":
+        window.location.href = "https://penguinmod.com";
+        break;
+    case "3":
+        window.location.href = "https://scratch.mit.edu";
+        break;
+    case "4":
+        window.location.href = "";
+        break;
+    default:
+        location.reload();
+}
+</script>
+<h3>Reload if it didn't work or push the button. If the issue persists, try other browsers.</h3>
+<button onclick="location.reload()">Reload</button>
+</body>
+</html>
